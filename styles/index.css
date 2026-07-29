@@ -112,6 +112,7 @@ img {
 .toc__link:hover {
 	color: var(--primary);
 	border-bottom-color: var(--primary);
+	text-decoration: none;
 }
 
 .header {
