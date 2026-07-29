@@ -8,8 +8,33 @@
   <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
-  <header>
-    <h1>Atividade 1</h1>
+  <header class="header">
+    <div class="header__logo">
+      <img
+        class="header__logo-img"
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+        alt="Logo HTML5"
+        width="48"
+        height="48"
+      />
+      <img
+        class="header__logo-img"
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+        alt="Logo CSS3"
+        width="48"
+        height="48"
+      />
+    </div>
+    <nav class="header__nav">
+      <ul class="header__nav-list">
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="#html">HTML</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="#css">CSS</a>
+        </li>
+      </ul>
+    </nav>
   </header>
 
   <div class="layout">
@@ -32,7 +57,6 @@
 
       <section id="css">
         <h2>Perguntas sobre CSS</h2>
-
       </section>
     </main>
 
@@ -59,6 +83,8 @@
     </aside>
   </div>
 
-  <footer></footer>
+  <footer class="footer">
+    <p class="footer__text">Feito por Adriano Araújo</p>
+  </footer>
 </body>
 </html>
