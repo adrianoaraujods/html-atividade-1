@@ -110,9 +110,17 @@ img {
 }
 
 .toc__link:hover {
-	color: var(--primary);
-	border-bottom-color: var(--primary);
-	text-decoration: none;
+  text-decoration: none;
+}
+
+.toc__link--html:hover {
+  color: var(--primary);
+  border-bottom-color: var(--primary);
+}
+
+.toc__link--css:hover {
+  color: var(--secondary);
+  border-bottom-color: var(--secondary);
 }
 
 .header {
