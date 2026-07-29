@@ -167,8 +167,14 @@ img {
 	background: var(--background);
 }
 
-.header__nav-link:hover {
+.header__nav-link--html:hover {
 	background: var(--primary);
+	color: var(--background);
+	text-decoration: none;
+}
+
+.header__nav-link--css:hover {
+	background: var(--secondary);
 	color: var(--background);
 	text-decoration: none;
 }
