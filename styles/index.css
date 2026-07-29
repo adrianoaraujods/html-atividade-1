@@ -176,13 +176,18 @@ img {
 	.layout__aside {
 		width: 280px;
 		position: sticky;
-		top: 1rem;
+		top: 6rem;
 		align-self: flex-start;
 	}
 
 	.header__nav {
 		display: none;
 	}
+}
+
+section[id],
+article[id] {
+	scroll-margin-top: 6rem;
 }
 
 .footer {
