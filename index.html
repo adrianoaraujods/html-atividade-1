@@ -146,6 +146,97 @@
 
       <section id="css">
         <h2>Perguntas sobre CSS</h2>
+
+        <article id="css-q1">
+          <h3>1. O que significa CSS?</h3>
+          <p>CSS (Cascading Style Sheets) é uma linguagem de estilo utilizada para definir a aparência e o layout de documentos HTML. Ela controla cores, fontes, espaçamentos, posicionamento e responsividade, separando a apresentação do conteúdo.</p>
+        </article>
+
+        <article id="css-q2">
+          <h3>2. O que é SELETOR em CSS?</h3>
+          <p>Um seletor é um padrão usado no CSS para selecionar e estilizar elementos HTML específicos. Ele determina a qual(is) elemento(s) as regras de estilo serão aplicadas, podendo segmentar por tag, classe, ID, atributo ou estado.</p>
+        </article>
+
+        <article id="css-q3">
+          <h3>3. Como define quais são os SELETORES no CSS?</h3>
+          <p>Os seletores são definidos antes do bloco de declarações, seguidos por chaves. Existem diversos tipos de seletores para diferentes níveis de especificidade:</p>
+          <pre class="code-block"><code>/* Seletor por tag */
+p { color: blue; }
+
+/* Seletor por classe */
+.destaque { font-weight: bold; }
+
+/* Seletor por ID */
+#cabecalho { background: black; }
+
+/* Seletor por atributo */
+input[type="email"] { border: 1px solid gray; }</code></pre>
+        </article>
+
+        <article id="css-q4">
+          <h3>4. Qual a estrutura básica em CSS?</h3>
+          <p>Uma regra CSS é composta por um seletor e um bloco de declarações. Cada declaração contém uma propriedade e um valor, separados por dois pontos:</p>
+          <pre class="code-block"><code>seletor {
+  propriedade: valor;
+  outra-propriedade: valor;
+}
+
+/* Exemplo prático */
+h1 {
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+}</code></pre>
+        </article>
+
+        <article id="css-q5">
+          <h3>5. Qual a hierarquia de prioridade nos seletores em CSS?</h3>
+          <p>A prioridade (especificidade) determina qual regra prevalece quando há conflitos. A hierarquia, da maior para a menor prioridade, é:</p>
+          <pre class="code-block"><code>1. !important (maior prioridade)
+2. Estilos inline (atributo style)
+3. ID (#id)
+4. Classe, atributo, pseudo-classe (.classe, [attr], :hover)
+5. Elemento, pseudo-elemento (div, ::before)
+6. Seletor universal (*), menor prioridade</code></pre>
+        </article>
+
+        <article id="css-q6">
+          <h3>6. Explique para que serve as PROPRIEDADES abaixo:</h3>
+          <ul class="props">
+            <li class="props__item">
+              <strong class="props__name"><code>width</code> / <code>height</code></strong>
+              <span class="props__desc">Define a largura e altura de um elemento, respectivamente. Podem ser fixas (px) ou relativas (%, vw, vh).</span>
+            </li>
+            <li class="props__item">
+              <strong class="props__name"><code>font-size</code></strong>
+              <span class="props__desc">Controla o tamanho da fonte. Aceita unidades como px, rem, em e porcentagem.</span>
+            </li>
+            <li class="props__item">
+              <strong class="props__name"><code>text-decoration</code></strong>
+              <span class="props__desc">Adiciona decorações ao texto como underline, overline, line-through ou none.</span>
+            </li>
+            <li class="props__item">
+              <strong class="props__name"><code>text-transform</code></strong>
+              <span class="props__desc">Altera a capitalização do texto: uppercase, lowercase, capitalize ou none.</span>
+            </li>
+            <li class="props__item">
+              <strong class="props__name"><code>color</code></strong>
+              <span class="props__desc">Define a cor do texto. Aceita valores hex (#fff), rgb, hsl ou nomes de cores.</span>
+            </li>
+            <li class="props__item">
+              <strong class="props__name"><code>border</code></strong>
+              <span class="props__desc">Adiciona uma borda ao redor do elemento. Agrupa espessura, estilo e cor (ex: <code>2px solid black</code>).</span>
+            </li>
+            <li class="props__item">
+              <strong class="props__name"><code>margin</code></strong>
+              <span class="props__desc">Define o espaçamento externo do elemento, criando distância entre ele e os elementos vizinhos.</span>
+            </li>
+            <li class="props__item">
+              <strong class="props__name"><code>padding</code></strong>
+              <span class="props__desc">Define o espaçamento interno entre o conteúdo do elemento e sua borda.</span>
+            </li>
+          </ul>
+        </article>
       </section>
     </main>
 
@@ -178,6 +269,26 @@
           </li>
           <li class="toc__item">
             <a class="toc__link" href="#css">Perguntas sobre CSS</a>
+            <ul class="toc__sublist">
+              <li class="toc__subitem">
+                <a class="toc__link" href="#css-q1">1. O que significa CSS?</a>
+              </li>
+              <li class="toc__subitem">
+                <a class="toc__link" href="#css-q2">2. O que é SELETOR?</a>
+              </li>
+              <li class="toc__subitem">
+                <a class="toc__link" href="#css-q3">3. Como define seletores?</a>
+              </li>
+              <li class="toc__subitem">
+                <a class="toc__link" href="#css-q4">4. Estrutura básica CSS?</a>
+              </li>
+              <li class="toc__subitem">
+                <a class="toc__link" href="#css-q5">5. Hierarquia de prioridade?</a>
+              </li>
+              <li class="toc__subitem">
+                <a class="toc__link" href="#css-q6">6. Propriedades CSS</a>
+              </li>
+            </ul>
           </li>
         </ul>
       </nav>
