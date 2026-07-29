@@ -200,12 +200,14 @@ h1 {
         <article id="css-q5">
           <h3>5. Qual a hierarquia de prioridade nos seletores em CSS?</h3>
           <p>A prioridade (especificidade) determina qual regra prevalece quando há conflitos. A hierarquia, da maior para a menor prioridade, é:</p>
-          <pre class="code-block"><code>1. !important (maior prioridade)
-2. Estilos inline (atributo style)
-3. ID (#id)
-4. Classe, atributo, pseudo-classe (.classe, [attr], :hover)
-5. Elemento, pseudo-elemento (div, ::before)
-6. Seletor universal (*), menor prioridade</code></pre>
+          <ol class="priority">
+            <li class="priority__item"><code>!important</code> (maior prioridade)</li>
+            <li class="priority__item">Estilos inline (atributo <code>style</code>)</li>
+            <li class="priority__item">ID (<code>#id</code>)</li>
+            <li class="priority__item">Classe, atributo, pseudo-classe (<code>.classe</code>, <code>[attr]</code>, <code>:hover</code>)</li>
+            <li class="priority__item">Elemento, pseudo-elemento (<code>div</code>, <code>::before</code>)</li>
+            <li class="priority__item">Seletor universal (<code>*</code>), menor prioridade</li>
+          </ol>
         </article>
 
         <article id="css-q6">
