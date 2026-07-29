@@ -42,15 +42,17 @@
       <section id="html">
         <h2>Perguntas sobre HTML</h2>
 
-        <article>
-          <h3>1. O que significa HTML?</h3>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, nihil? Voluptatibus qui exercitationem laboriosam vel quas quia perspiciatis labore atque omnis itaque nisi dolores laudantium ullam nam magni, cum odit.</p>
-        </article>
+        <div>
+          <article id="html-q1">
+            <h3>1. O que significa HTML?</h3>
+            <p>HTML significa HyperText Markup Language (Linguagem de Marcação de Hipertexto). É a linguagem padrão utilizada para criar e estruturar páginas web, definindo a semântica e o conteúdo através de elementos e tags.</p>
+          </article>
 
-        <article>
-          <h3>2. O que é TAGS em HTML?</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque doloribus harum aliquam nostrum cumque tempore quidem repellat expedita odio, laborum veritatis ratione, blanditiis omnis dolores ut debitis architecto animi quae?</p>
-        </article>
+          <article id="html-q2">
+            <h3>2. O que é TAGS em HTML?</h3>
+            <p>Tags são os elementos fundamentais do HTML. Cada tag representa um tipo de conteúdo ou estrutura, como parágrafos, títulos, imagens e links. Tags geralmente vêm em pares: uma de abertura <code>&lt;tag&gt;</code> e uma de fechamento <code>&lt;/tag&gt;</code>.</p>
+          </article>
+        </div>
       </section>
 
       <section id="css">
@@ -59,7 +61,25 @@
     </main>
 
     <aside class="layout__aside">
-
+      <nav class="toc">
+        <h2 class="toc__title">Sumário</h2>
+        <ul class="toc__list">
+          <li class="toc__item">
+            <a class="toc__link" href="#html">Perguntas sobre HTML</a>
+            <ul class="toc__sublist">
+              <li class="toc__subitem">
+                <a class="toc__link" href="#html-q1">1. O que significa HTML?</a>
+              </li>
+              <li class="toc__subitem">
+                <a class="toc__link" href="#html-q2">2. O que é TAGS em HTML?</a>
+              </li>
+            </ul>
+          </li>
+          <li class="toc__item">
+            <a class="toc__link" href="#css">Perguntas sobre CSS</a>
+          </li>
+        </ul>
+      </nav>
     </aside>
   </div>
 
